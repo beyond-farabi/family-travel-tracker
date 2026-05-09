@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Family Member • Travel Tracker</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/new.css">
+</head>
+<body>
+    <div class="new-user-container">
+        <div class="new-user-card glass">
+            <a href="/" class="back-link">← Back to map</a>
+            <h1>Add Family Member</h1>
+            <p class="subtitle">Setiap anggota punya warna sendiri di peta.</p>
+
+            <form action="/new" method="post">
+                <label class="field-label" for="name">Name</label>
+                <input type="text" id="name" name="name" required autofocus>
+                <label class="field-label">Pick a color</label>
+                <div class="color-grid">
+                    <input type="radio" name="color" id="c-red" value="red" required />
+                    <label for="c-red" class="color-swatch swatch-red"></label>
+
+                    <input type="radio" name="color" id="c-orange" value="orange" required />
+                    <label for="c-orange" class="color-swatch swatch-orange"></label>
+
+                    <input type="radio" name="color" id="c-yellow" value="yellow" required />
+                    <label for="c-yellow" class="color-swatch swatch-yellow"></label>
+                    
+                    <input type="radio" name="color" id="c-olive" value="olive" required />
+                    <label for="c-olive" class="color-swatch swatch-olive"></label>
+
+                    <input type="radio" name="color" id="c-green" value="green" required />
+                    <label for="c-green" class="color-swatch swatch-green"></label>
+
+                    <input type="radio" name="color" id="c-teal" value="teal" required />
+                    <label for="c-teal" class="color-swatch swatch-teal"></label>
+
+                    <input type="radio" name="color" id="c-blue" value="blue" required />
+                    <label for="c-blue" class="color-swatch swatch-blue"></label>
+
+                    <input type="radio" name="color" id="c-violet" value="violet" required />
+                    <label for="c-violet" class="color-swatch swatch-violet"></label>
+
+                    <input type="radio" name="color" id="c-purple" value="purple" required />
+                    <label for="c-purple" class="color-swatch swatch-purple"></label>
+
+                    <input type="radio" name="color" id="c-pink" value="pink" required />
+                    <label for="c-pink" class="color-swatch swatch-pink"></label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn" style="background-color: var(--accent);">
+                        Create Member
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
