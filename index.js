@@ -14,7 +14,7 @@ const port = process.env.PORT || 3000;
 
 const db = process.env.DATABASE_URL
     ? new pg.Client({
-        connectionString: pricess.env.DATABASE_URL,
+        connectionString: process.env.DATABASE_URL,
         ssl: { rejectUnauthorized: false },
     })
     : new pg.Client({
